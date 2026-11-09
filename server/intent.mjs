@@ -8,7 +8,7 @@ const directory = path.join(root, '.local', 'trusted-intents');
 const sat = amount => Math.round(amount * 1e8);
 export function checkIntent(intent, { node, to, amount }) {
   if (!intent || intent.node !== node || intent.address !== to || sat(intent.amount) !== sat(amount)) {
-    throw Object.assign(new Error('PSBT 검증 실패: 신뢰된 원래 송금 의도와 HTTP 요청이 일치하지 않습니다. 서명을 중단합니다.'), {status: 409});
+    throw Object.assign(new Error('송금 의도 무결성 검증 실패: 신뢰된 원본 송금 의도와 HTTP 요청이 일치하지 않습니다. PSBT 생성 및 서명을 중단합니다.'), {status: 409});
   }
 }
 export function verifyPsbt(decoded, intent, changePosition) {
