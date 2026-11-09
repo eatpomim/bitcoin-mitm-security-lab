@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Regtest Security Lab",
+    "slug": "regtest-security-lab",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "web": { "bundler": "metro", "output": "single", "name": "Regtest Lab" },
+    "ios": { "supportsTablet": true, "infoPlist": { "NSLocalNetworkUsageDescription": "실습 PC의 Regtest 대시보드에 연결합니다.", "NSAppTransportSecurity": { "NSAllowsLocalNetworking": true } } },
+    "android": { "package": "edu.regtest.securitylab" }
+  }
+}

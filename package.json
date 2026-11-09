@@ -1,0 +1,11 @@
+{
+  "name": "regtest-security-lab",
+  "private": true,
+  "scripts": {
+    "server": "node server/index.mjs",
+    "test": "node --test server/*.test.mjs",
+    "test:integration": "node server/integration.mjs",
+    "web": "npm --prefix app run web",
+    "build": "npm --prefix app run build"
+  }
+}

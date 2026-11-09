@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "partition",
+    "status": "passed",
+    "elapsedMs": 805,
+    "evidence": {
+      "result": {
+        "parent": "3dec6b30844a1827aa392ae09cd67e07052e09994b8ce2cac06bb25fab687d61",
+        "publicTip": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+        "blockedPropagation": true,
+        "recoveryMs": 366,
+        "scale": "3 local nodes"
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 101,
+          "hash": "3dec6b30844a1827aa392ae09cd67e07052e09994b8ce2cac06bb25fab687d61",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000cc",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 31229,
+              "bytesReceived": 2753
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 29902,
+              "bytesReceived": 1044
+            }
+          ],
+          "mempool": [],
+          "balance": 50
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 101,
+          "hash": "3dec6b30844a1827aa392ae09cd67e07052e09994b8ce2cac06bb25fab687d61",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000cc",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2753,
+              "bytesReceived": 31229
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 101,
+          "hash": "3dec6b30844a1827aa392ae09cd67e07052e09994b8ce2cac06bb25fab687d61",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000cc",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53564",
+              "inbound": true,
+              "bytesSent": 1044,
+              "bytesReceived": 29902
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 31509,
+              "bytesReceived": 2753
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2207,
+              "bytesReceived": 1314
+            }
+          ],
+          "mempool": [],
+          "balance": 100
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2753,
+              "bytesReceived": 31509
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53575",
+              "inbound": true,
+              "bytesSent": 1314,
+              "bytesReceived": 2207
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "fork",
+    "status": "passed",
+    "elapsedMs": 877,
+    "evidence": {
+      "result": {
+        "parent": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+        "publicTip": "32a5dd703fe6a6747760e5d5f1858afb7c2f97fb2f2976dd2dd70d9f6d263b35",
+        "forkTip": "4cf1e32afc0d650bbdc560ea08b343c11b982e66453da55e9034107da103b604",
+        "winningTip": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+        "publicWork": "00000000000000000000000000000000000000000000000000000000000000d0",
+        "winnerWork": "00000000000000000000000000000000000000000000000000000000000000d4",
+        "orphanConfirmations": -1
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 31509,
+              "bytesReceived": 2753
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2207,
+              "bytesReceived": 1314
+            }
+          ],
+          "mempool": [],
+          "balance": 100
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2753,
+              "bytesReceived": 31509
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 102,
+          "hash": "2cb8dd3e58c927a672a70592e8641b3a41921bebd202120c2f24f78de64d1f97",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53575",
+              "inbound": true,
+              "bytesSent": 1314,
+              "bytesReceived": 2207
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 32793,
+              "bytesReceived": 2847
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 4344,
+              "bytesReceived": 5561
+            }
+          ],
+          "mempool": [],
+          "balance": 250
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2847,
+              "bytesReceived": 32793
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53576",
+              "inbound": true,
+              "bytesSent": 5561,
+              "bytesReceived": 4344
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "reorg",
+    "status": "passed",
+    "elapsedMs": 879,
+    "evidence": {
+      "result": {
+        "parent": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+        "publicTip": "74f937d6b8dc150010493ead8f73c5de9430e9dbad630526b79b37ba2d1e0d72",
+        "forkTip": "1910d2ff8daf2a2c79c76694b685eebad8e691dba260f5f9817f50290ee6eeb9",
+        "winningTip": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+        "publicWork": "00000000000000000000000000000000000000000000000000000000000000d6",
+        "winnerWork": "00000000000000000000000000000000000000000000000000000000000000da",
+        "orphanConfirmations": -1
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 32793,
+              "bytesReceived": 2847
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 4344,
+              "bytesReceived": 5561
+            }
+          ],
+          "mempool": [],
+          "balance": 250
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2847,
+              "bytesReceived": 32793
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 105,
+          "hash": "0b4f5358e1a1c98c75dfbee999354c99c9e9138319d8257602df49d5963eaf6b",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000d4",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53576",
+              "inbound": true,
+              "bytesSent": 5561,
+              "bytesReceived": 4344
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 34077,
+              "bytesReceived": 2941
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 3721,
+              "bytesReceived": 5793
+            }
+          ],
+          "mempool": [],
+          "balance": 400
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2941,
+              "bytesReceived": 34077
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53577",
+              "inbound": true,
+              "bytesSent": 5793,
+              "bytesReceived": 3721
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "double-spend",
+    "status": "passed",
+    "elapsedMs": 981,
+    "evidence": {
+      "result": {
+        "parent": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+        "publicTip": "307af21b654f69dcb7dcbb7264d5145e72cbe53371ee2d6322f8a8ce4ee042d8",
+        "forkTip": "61abc157f633c0e07b6c79e6ef61f1ae37313d9a0731efe98d9f37c1d7665ce1",
+        "winningTip": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+        "publicWork": "00000000000000000000000000000000000000000000000000000000000000dc",
+        "winnerWork": "00000000000000000000000000000000000000000000000000000000000000e0",
+        "orphanConfirmations": -1,
+        "input": {
+          "txid": "0e272ca03a47d3e25e4133c06269cd5853df4bdf65bf02c3c2b52b304854cd3e",
+          "vout": 0
+        },
+        "normalTx": "39a3817fd9a5239d63c90b69a90f8d6a032cbdf69c39e9eab749b54c19fc5bef",
+        "conflictTx": "1b7f7860d86446dcba1df94149d7118e03ab3a7adbf75fe87c5f3a0503bf854b",
+        "normalOutput": null,
+        "winnerOutput": {
+          "bestblock": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "confirmations": 3,
+          "value": 49.9999,
+          "scriptPubKey": {
+            "asm": "0 c9501ce4cc39bed16ab325fb954eacb52eea6348",
+            "desc": "addr(bcrt1qe9gpeexv8xldz64nyhae2n4vk5hw5c6g5t02c6)#3985ka32",
+            "hex": "0014c9501ce4cc39bed16ab325fb954eacb52eea6348",
+            "address": "bcrt1qe9gpeexv8xldz64nyhae2n4vk5hw5c6g5t02c6",
+            "type": "witness_v0_keyhash"
+          },
+          "coinbase": false
+        },
+        "meaning": "통제된 경쟁 체인 공개. 실제 해시파워 51% 측정 아님."
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 34077,
+              "bytesReceived": 2941
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 3721,
+              "bytesReceived": 5793
+            }
+          ],
+          "mempool": [],
+          "balance": 400
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 2941,
+              "bytesReceived": 34077
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 108,
+          "hash": "1e98557b038d11a5d211841eba626dad68951bcfa33087155c3465266d348495",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000da",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53577",
+              "inbound": true,
+              "bytesSent": 5793,
+              "bytesReceived": 3721
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ]
+    }
+  },
+  {
+    "id": "signature",
+    "status": "passed",
+    "elapsedMs": 130,
+    "evidence": {
+      "result": {
+        "baseline": {
+          "txid": "0d487bbe29c472b4f65d7f597d5355f046659b16bb942d864284dcad96185d0b",
+          "wtxid": "14dd553e143264e98b3a721d845dcd69ed131f4c53cf980ca38f7d12a189d84e",
+          "allowed": true,
+          "vsize": 110,
+          "fees": {
+            "base": 0.0001,
+            "effective-feerate": 0.00090909,
+            "effective-includes": [
+              "14dd553e143264e98b3a721d845dcd69ed131f4c53cf980ca38f7d12a189d84e"
+            ]
+          }
+        },
+        "rejected": {
+          "txid": "0d487bbe29c472b4f65d7f597d5355f046659b16bb942d864284dcad96185d0b",
+          "wtxid": "d5be652e4afb7c4739847abd13ff70404bdbe1eb282a91a379e380aed95ffa0b",
+          "allowed": false,
+          "reject-reason": "mempool-script-verify-flag-failed (Signature must be zero for failed CHECK(MULTI)SIG operation)",
+          "reject-details": "mempool-script-verify-flag-failed (Signature must be zero for failed CHECK(MULTI)SIG operation), input 0 of 0d487bbe29c472b4f65d7f597d5355f046659b16bb942d864284dcad96185d0b (wtxid d5be652e4afb7c4739847abd13ff70404bdbe1eb282a91a379e380aed95ffa0b), spending b5d9d4af96f2ec57bd50fc452804c483a892d724e092e78f17bb9f8ecd71c631:0"
+        },
+        "broadcast": false
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ]
+    }
+  },
+  {
+    "id": "block",
+    "status": "passed",
+    "elapsedMs": 69,
+    "evidence": {
+      "result": {
+        "candidate": "7af776116772f21af789e1e93371827723bf042a0d7abc80caa13f8fbe9f1679",
+        "reason": "bad-txnmrklroot",
+        "before": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+        "after": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+        "validProofOfWork": true
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ]
+    }
+  },
+  {
+    "id": "majority",
+    "status": "passed",
+    "elapsedMs": 954,
+    "evidence": {
+      "result": {
+        "parent": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+        "publicTip": "149bd306aae07eedba6b10a998abc8e7e32e9d762b7f364d7492fec5ec7babf0",
+        "forkTip": "6021d1fa799db5825d3b5dbd008827894e3ca11887660068f4624031b7b8dcaf",
+        "winningTip": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+        "publicWork": "00000000000000000000000000000000000000000000000000000000000000e2",
+        "winnerWork": "00000000000000000000000000000000000000000000000000000000000000e6",
+        "orphanConfirmations": -1,
+        "input": {
+          "txid": "b5d9d4af96f2ec57bd50fc452804c483a892d724e092e78f17bb9f8ecd71c631",
+          "vout": 0
+        },
+        "normalTx": "bd97d581c86fb630bac58c6514534fdc6a34ac14a4dfafef0ba1382a6b4d22a1",
+        "conflictTx": "b2d8733cb0b5a754728e434f0acabdc62e53771b6a27abb7610bc9b00fb33a0d",
+        "normalOutput": null,
+        "winnerOutput": {
+          "bestblock": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "confirmations": 3,
+          "value": 49.9999,
+          "scriptPubKey": {
+            "asm": "0 4b4bb1f0ff21988f683b911473058507cbe88d9b",
+            "desc": "addr(bcrt1qfd9mru8lyxvg76pmjy28xpv9ql973rvmthu642)#42dl6ylw",
+            "hex": "00144b4bb1f0ff21988f683b911473058507cbe88d9b",
+            "address": "bcrt1qfd9mru8lyxvg76pmjy28xpv9ql973rvmthu642",
+            "type": "witness_v0_keyhash"
+          },
+          "coinbase": false
+        },
+        "meaning": "통제된 경쟁 체인 공개. 실제 해시파워 51% 측정 아님."
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 35803,
+              "bytesReceived": 3090
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 2070,
+              "bytesReceived": 3680
+            }
+          ],
+          "mempool": [],
+          "balance": 500
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3090,
+              "bytesReceived": 35803
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 111,
+          "hash": "62274e8768a67f44c91073d4896fb11edb921c698d9e604a09bd6cab3c0d2e66",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e0",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53578",
+              "inbound": true,
+              "bytesSent": 3680,
+              "bytesReceived": 2070
+            }
+          ],
+          "mempool": [],
+          "balance": 49.9999
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 37529,
+              "bytesReceived": 3239
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 3259,
+              "bytesReceived": 6366
+            }
+          ],
+          "mempool": [],
+          "balance": 600
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3239,
+              "bytesReceived": 37529
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53579",
+              "inbound": true,
+              "bytesSent": 6366,
+              "bytesReceived": 3259
+            }
+          ],
+          "mempool": [],
+          "balance": 99.9998
+        }
+      ]
+    }
+  },
+  {
+    "id": "network",
+    "status": "passed",
+    "elapsedMs": 752,
+    "evidence": {
+      "result": {
+        "parent": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+        "publicTip": "1526fb5a52cd5d390681d246ff994bed8109f4e038880c0e983143109723bb69",
+        "blockedPropagation": true,
+        "recoveryMs": 333,
+        "scale": "3 local nodes"
+      },
+      "before": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 37529,
+              "bytesReceived": 3239
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 3259,
+              "bytesReceived": 6366
+            }
+          ],
+          "mempool": [],
+          "balance": 600
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3239,
+              "bytesReceived": 37529
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 114,
+          "hash": "16cc8a19476a4d890b6410c60f2d30d1a62e5641fa935a3103abb619bf2c9399",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e6",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53579",
+              "inbound": true,
+              "bytesSent": 6366,
+              "bytesReceived": 3259
+            }
+          ],
+          "mempool": [],
+          "balance": 99.9998
+        }
+      ],
+      "after": [
+        {
+          "id": "A",
+          "online": true,
+          "height": 115,
+          "hash": "1526fb5a52cd5d390681d246ff994bed8109f4e038880c0e983143109723bb69",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e8",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:20544",
+              "inbound": false,
+              "bytesSent": 37809,
+              "bytesReceived": 3239
+            },
+            {
+              "address": "127.0.0.1:20644",
+              "inbound": false,
+              "bytesSent": 3390,
+              "bytesReceived": 2677
+            }
+          ],
+          "mempool": [],
+          "balance": 650
+        },
+        {
+          "id": "B",
+          "online": true,
+          "height": 115,
+          "hash": "1526fb5a52cd5d390681d246ff994bed8109f4e038880c0e983143109723bb69",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e8",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53563",
+              "inbound": true,
+              "bytesSent": 3239,
+              "bytesReceived": 37809
+            }
+          ],
+          "mempool": [],
+          "balance": 0
+        },
+        {
+          "id": "C",
+          "online": true,
+          "height": 115,
+          "hash": "1526fb5a52cd5d390681d246ff994bed8109f4e038880c0e983143109723bb69",
+          "chainwork": "00000000000000000000000000000000000000000000000000000000000000e8",
+          "chain": "regtest",
+          "pruned": false,
+          "active": true,
+          "peers": [
+            {
+              "address": "127.0.0.1:53581",
+              "inbound": true,
+              "bytesSent": 2677,
+              "bytesReceived": 3390
+            }
+          ],
+          "mempool": [],
+          "balance": 99.9998
+        }
+      ]
+    }
+  },
+  {
+    "id": "api-auth-lock-confirmation",
+    "status": "passed"
+  }
+]
